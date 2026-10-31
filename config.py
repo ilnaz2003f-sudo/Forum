@@ -1,0 +1,17 @@
+# Конфигурация для мониторинга жалоб на форуме Radmir
+
+# Telegram Bot API
+TELEGRAM_BOT_TOKEN = "9193174249:AAFJzk4gkLDeTKNLgUuEF18Z6VpKk_C_QuE"        # Токен от @BotFather
+TELEGRAM_CHAT_ID = "1045570566"            # Ваш chat ID (от @userinfobot)
+
+# Форум
+FORUM_URL = "https://forum.radmir.games/forums/zhaloby-na-igrokov-sost-v-kriminal-nykh-strukturakh.972/"
+FORUM_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+}
+
+# Порог времени (в часах)
+THRESHOLD_HOURS = 20
+
+# Интервал проверки в секундах (по умолчанию 1 час)
+CHECK_INTERVAL_SECONDS = 3600
