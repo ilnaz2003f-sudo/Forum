@@ -1,7 +1,7 @@
 # Конфигурация для мониторинга жалоб на форуме Radmir
 
 # Telegram Bot API
-TELEGRAM_BOT_TOKEN = ""        # Токен от @BotFather
+TOKEN = ""
 TELEGRAM_CHAT_ID = ""            # Ваш chat ID (от @userinfobot)
 
 # Форум
