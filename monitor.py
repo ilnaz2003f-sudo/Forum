@@ -198,14 +198,13 @@ def paginate_count() -> int:
 
 # ---------- Основной цикл ----------
 
-def monitor():
+def check_forum():
     """Основной цикл мониторинга."""
     logger.info("=" * 50)
     logger.info("Старт мониторинга жалоб на форуме Radmir")
     logger.info(f"Порог: {THRESHOLD_HOURS} часов")
     logger.info("=" * 50)
 
-    while True:
         try:
             total_pages = paginate_count()
             logger.info(f"Найдено страниц: {total_pages}")
@@ -252,8 +251,7 @@ def monitor():
             logger.error(f"Ошибка в цикле мониторинга: {e}", exc_info=True)
 
         logger.info(f"Следующая проверка через {CHECK_INTERVAL_SECONDS // 60} мин...")
-        time.sleep(CHECK_INTERVAL_SECONDS)
 
 
 if __name__ == "__main__":
-    monitor()
+    run_once()
