@@ -1,8 +1,8 @@
 # Конфигурация для мониторинга жалоб на форуме Radmir
 
 # Telegram Bot API
-TOKEN = ""
-TELEGRAM_CHAT_ID = ""            # Ваш chat ID (от @userinfobot)
+TOKEN = "TELEGRAM_BOT_TOKEN"
+TELEGRAM_CHAT_ID = "TELEGRAM_CHAT_ID"            # Ваш chat ID (от @userinfobot)
 
 # Форум
 FORUM_URL = "https://forum.radmir.games/forums/zhaloby-na-igrokov-sost-v-kriminal-nykh-strukturakh.972/"
